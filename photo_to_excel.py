@@ -1,5 +1,4 @@
 import time
-
 from PIL import Image
 from openpyxl.styles import PatternFill
 import openpyxl
@@ -39,11 +38,10 @@ def rgb_to_hex(r, g, b):
     return '{:02X}{:02X}{:02X}'.format(r, g, b)
 
 
-# 比如打开test.xlsx
+# 打开test.xlsx
 wb = load_workbook(filename='1.xlsx')
 # 使用第一个sheet作为工作簿
 work = wb[wb.sheetnames[0]]
-
 
 image = Image.open(r"C:\Users\开摆的林十三\Downloads\生成二次元头像.png")
 
